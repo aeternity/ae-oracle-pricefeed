@@ -4,7 +4,7 @@ The **ae-oracle-pricefeed** is an example service that can be hosted and allows 
 On startup of the service following tasks are being executed:
 1. The sdk-client is being initialized with the keypair provided via `./data/keypair.json` (when using the command to host by hourself) or alternatively generates a new keypair if no keypair is provided
 1. The service checks if the account of the provided keypair has enough funds to run the oracle
-    - if NOT it prints the respective information in the console and waits for respective funding (on testnet this can easily be done using https://faucet.aepps.com/)
+    - if NOT it prints the respective information in the console and waits for funding (on testnet this can easily be done using https://faucet.aepps.com/)
 1. If the balance check is successful the service checks if the oracle is already registered
     - if NOT the oracle will be registered
 1. The service logs the oracle id to the console
@@ -18,7 +18,7 @@ On startup of the service following tasks are being executed:
 
 ```bash
 # checkout repository
-git clone https://github.com/thepiwo/ae-oracle-pricefeed
+git clone https://github.com/aeternity/ae-oracle-pricefeed
 cd ae-oracle-pricefeed
 
 # build container
